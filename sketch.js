@@ -17,7 +17,6 @@ function setup() {
 
 function draw() {
     background(backImg);
-    frameRate(30);
 
     for (let index = 0; index < SnowFlakes.length; index++) {
         SnowFlakes[index].show();
