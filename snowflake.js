@@ -3,6 +3,7 @@ class SonwFlake {
     constructor (x, y){
         this.position = createVector(x, y)
         this.speedFaktor = random(0.2, gravity);
+        this.offSet = random(0, width);
     }
 
     update(){
