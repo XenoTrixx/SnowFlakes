@@ -4,11 +4,13 @@ class SonwFlake {
         this.position = createVector(x, y)
         this.speedFaktor = random(0.2, gravity);
         this.offSet = random(0, width);
+        this.xIncrement = 0.1;
     }
 
     update(){
         this.position.y += this.speedFaktor * gravity;
         this.position.x += map(noise(this.offSet), 0, 1, -2, 2);
+        this.offSet += this.xIncrement;
     }
 
     show(){
