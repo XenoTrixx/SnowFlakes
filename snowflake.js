@@ -9,7 +9,7 @@ class SonwFlake {
 
     update(){
         this.position.y += this.speedFaktor * gravity;
-        this.position.x += map(noise(this.offSet), 0, 1, -2, 2);
+        this.position.x += map(noise(this.offSet), 0, 1, -1, 1);
         this.offSet += this.xIncrement;
     }
 
