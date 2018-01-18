@@ -1,4 +1,4 @@
-lass SonwFlake {
+class SonwFlake {
 
     constructor (x, y){
         this.position = createVector(x, y)
